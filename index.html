@@ -20,6 +20,16 @@
       referrerpolicy="no-referrer"
     />
 
+    <style>
+      .link-underline {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .link-underline:hover {
+        text-decoration-thickness: 2px;
+      }
+    </style>
+
     <title>Oumar Diagne | Full-Stack .NET & Angular Developer</title>
   </head>
 
@@ -54,31 +64,83 @@
           <h2 class="title-small">CONTACT</h2>
 
           <h3>Phone</h3>
-          <p>+336 65 90 58 14</p>
+          <p>+33 6 65 90 58 14</p>
 
           <h3>Email</h3>
           <p>
-            <a href="mailto:oums4b@gmail.com">oums4b@gmail.com</a>
+            <!-- Email address hidden: link scrolls to the contact form -->
+            <a
+              href="#contact"
+              class="js-contact-link text-primary link-underline"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Send me a message
+            </a>
           </p>
 
           <h3>Location</h3>
-          <p>Ile-de-france, France</p>
+          <p>Île-de-France, France</p>
+        </div>
+
+        <!-- NEW: certification block, placed first so it is seen immediately -->
+        <div class="block">
+          <h2 class="title-small">CERTIFICATIONS</h2>
+
+          <h3>Microsoft Certified: Azure Developer Associate (AZ-204)</h3>
+          <p>Microsoft — July 2026</p>
+          <p>
+            <a
+              class="text-primary link-underline"
+              href="https://learn.microsoft.com/fr-fr/users/diagneoumar-8124/credentials/9051d158c70b4874"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Verify the AZ-204 certification (opens in a new tab)"
+            >
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              Verify credential
+            </a>
+          </p>
         </div>
 
         <div class="block">
           <h2 class="title-small">EDUCATION & TRAINING</h2>
 
-          <h3>DevOps & Cloud Engineering Training</h3>
-          <p>DYMA — Online training programme - 2024</p>
-          <p>Microsoft Azure — Online training programme - 2025</p>
+          <h3>Microsoft Azure</h3>
+          <p>Online training programme — 2025</p>
+
+          <h3>DevOps & Cloud Engineering</h3>
+          <p>DYMA — Online training programme — 2024</p>
 
           <h3>Engineering Training</h3>
-          <p>GTM Ingénierie — 2016</p>
-          <p>Master's Degree in Electronics - 2009</p>
+          <p>GTM Ingénierie — Guyancourt (Yvelines), France — 2016</p>
+
+          <h3>Master's Degree in Electronics</h3>
+          <p>Faculty of Engineering, University of Genoa, Italy — 2009</p>
+          <p>
+            Including a 9-month internship at Ansaldo STS, Genoa (Sampierdarena)
+          </p>
         </div>
 
         <div class="block">
           <h2 class="title-small">TECHNICAL SKILLS</h2>
+
+          <h3>ASP.NET Core (Web API)</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress-80"></div>
+            <div class="bar-skill-dot-80"></div>
+          </div>
+
+          <h3>Entity Framework Core</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress-80"></div>
+            <div class="bar-skill-dot-80"></div>
+          </div>
+
+          <h3>Microsoft Azure</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress-70"></div>
+            <div class="bar-skill-dot-70"></div>
+          </div>
 
           <h3>HTML</h3>
           <div class="bar-skill">
@@ -144,7 +206,7 @@
             <div class="bar-skill-progress-50"></div>
             <div class="bar-skill-dot-50"></div>
           </div>
-          <h3>terraform</h3>
+          <h3>Terraform</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-70"></div>
             <div class="bar-skill-dot-70"></div>
@@ -185,12 +247,12 @@
             <div class="bar-skill-progress-90"></div>
             <div class="bar-skill-dot-90"></div>
           </div>
-          <h3>Talend Api Tool</h3>
+          <h3>Talend API Tester</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-70"></div>
             <div class="bar-skill-dot-70"></div>
           </div>
-          <h3>VMWare</h3>
+          <h3>VMware</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-70"></div>
             <div class="bar-skill-dot-70"></div>
@@ -279,33 +341,35 @@
 
         <h2 class="title-small">PROFESSIONAL EXPERIENCE</h2>
 
-        <!-- Replace the sample blocks below with your real experience. -->
+        <!-- Daemod: current activity between assignments -->
         <div class="experience">
           <div class="timeline">
-            Now <br />
+            2025 <br />
             – <br />
-            2018
+            Now
           </div>
 
           <div class="content">
-            <h3>Web Application Maintenance & Support Engineer</h3>
-            <p class="text-hint mb-2">Daemod</p>
-            <p>
-              Maintained and enhanced web applications and web servers, ensuring
-              security, performance and service continuity.
+            <h3>Operations Manager &amp; IT Administrator</h3>
+            <p class="text-hint mb-2">
+              Daemod — Construction &amp; building services company · between IT
+              assignments
             </p>
+            <p>
+              Between software assignments, I manage and administer Daemod, a
+              company specialising in works management and building services.
+            </p>
+            <!-- TODO: keep only the tasks you really perform -->
             <ul>
-              <li>Maintained and enhanced web applications and web servers.</li>
-              <li>Implemented user interface features and improvements.</li>
               <li>
-                Supported security maintenance and remediation activities.
+                Manage day-to-day operations and administration: planning,
+                client follow-up, quotes and invoicing.
               </li>
               <li>
-                Monitored web traffic, audience analytics and SEO performance.
+                Administer the company's IT tools, workstations and website.
               </li>
               <li>
-                Handled incidents and service requests in line with SLA
-                commitments.
+                Automate and digitise internal processes with in-house tools.
               </li>
             </ul>
           </div>
@@ -317,7 +381,8 @@
           <div class="content">
             <h3>.NET Developer</h3>
             <p class="text-hint mb-2">
-              Credit Mutuel - Banking and Software Publishing Projects
+              Euro-Information — Assignment at Crédit Mutuel (March – August
+              2025)
             </p>
             <p>
               Contributed to the end-to-end development of a project management
@@ -341,11 +406,45 @@
           </div>
         </div>
 
+        <!-- Daemod: activity between assignments (2023-2025) -->
         <div class="experience">
           <div class="timeline">
             2023 <br />
             – <br />
-            2019
+            2025
+          </div>
+
+          <div class="content">
+            <h3>Operations Manager &amp; IT Administrator</h3>
+            <p class="text-hint mb-2">
+              Daemod — Construction &amp; building services company · between IT
+              assignments
+            </p>
+            <p>
+              Between software assignments, I manage and administer Daemod, a
+              company specialising in works management and building services.
+            </p>
+            <!-- TODO: keep only the tasks you really perform -->
+            <ul>
+              <li>
+                Manage day-to-day operations and administration: planning,
+                client follow-up, quotes and invoicing.
+              </li>
+              <li>
+                Administer the company's IT tools, workstations and website.
+              </li>
+              <li>
+                Automate and digitise internal processes with in-house tools.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="timeline">
+            2019 <br />
+            – <br />
+            2023
           </div>
 
           <div class="content">
@@ -385,11 +484,76 @@
             </ul>
           </div>
         </div>
+
+        <!-- Short assignments 2017-2019 -->
         <div class="experience">
           <div class="timeline">
-            2015 <br />
+            2017 <br />
             – <br />
-            2013
+            2019
+          </div>
+
+          <div class="content">
+            <h3>.NET Developer — Short-Term Assignments</h3>
+            <p class="text-hint mb-2">Several 3-month assignments</p>
+            <ul>
+              <li>
+                Isagri — Jan 2017 – Apr 2017: developed and maintained .NET
+                applications for agricultural software solutions.
+              </li>
+              <li>
+                Groupe BPOC — Apr 2017 – Jul 2017: contributed to the
+                development of a web-based CRM system using ASP.NET Core and
+                ASP.NET MVC.
+              </li>
+              <li>
+                Septeo — Oct 2018 – Dec 2018: contributed to the development of
+                a web-based legal management system using ASP.NET Core and
+                Angular.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Daemod: activity between assignments (2016-2019) -->
+        <div class="experience">
+          <div class="timeline">
+            2016 <br />
+            – <br />
+            2019
+          </div>
+
+          <div class="content">
+            <h3>Operations Manager &amp; IT Administrator</h3>
+            <p class="text-hint mb-2">
+              Daemod — Construction &amp; building services company · between IT
+              assignments
+            </p>
+            <p>
+              Between software assignments, I manage and administer Daemod, a
+              company specialising in works management and building services.
+            </p>
+            <!-- TODO: keep only the tasks you really perform -->
+            <ul>
+              <li>
+                Manage day-to-day operations and administration: planning,
+                client follow-up, quotes and invoicing.
+              </li>
+              <li>
+                Administer the company's IT tools, workstations and website.
+              </li>
+              <li>
+                Automate and digitise internal processes with in-house tools.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="timeline">
+            2013 <br />
+            – <br />
+            2015
           </div>
 
           <div class="content">
@@ -432,9 +596,9 @@
         </div>
         <div class="experience">
           <div class="timeline">
-            2013 <br />
+            2012 <br />
             – <br />
-            2012
+            2013
           </div>
 
           <div class="content">
@@ -478,9 +642,9 @@
         </div>
         <div class="experience">
           <div class="timeline">
-            2012 <br />
+            2010 <br />
             – <br />
-            2010
+            2012
           </div>
 
           <div class="content">
@@ -558,7 +722,7 @@
         </div>
       </main>
 
-      <footer>
+      <footer id="contact">
         <h2 class="title-small">GET IN TOUCH</h2>
 
         <form
@@ -611,5 +775,20 @@
         </form>
       </footer>
     </div>
+
+    <script>
+      // Smooth scroll to the contact form and put the cursor in the first field
+      document.querySelectorAll(".js-contact-link").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(function () {
+            document.getElementById("name-en").focus({ preventScroll: true });
+          }, 500);
+        });
+      });
+    </script>
   </body>
 </html>

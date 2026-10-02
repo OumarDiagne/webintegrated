@@ -20,6 +20,16 @@
       referrerpolicy="no-referrer"
     />
 
+    <style>
+      .link-underline {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .link-underline:hover {
+        text-decoration-thickness: 2px;
+      }
+    </style>
+
     <title>Oumar Diagne | Développeur Full-Stack .NET & Angular</title>
   </head>
 
@@ -58,7 +68,14 @@
 
           <h3>Email</h3>
           <p>
-            <a href="mailto:oums4b@gmail.com">oums4b@gmail.com</a>
+            <!-- Adresse e-mail masquée : le lien mène au formulaire de contact -->
+            <a
+              href="#contact"
+              class="js-contact-link text-primary link-underline"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              M’envoyer un message
+            </a>
           </p>
 
           <h3>Localisation</h3>
@@ -66,23 +83,61 @@
         </div>
 
         <div class="block">
+          <h2 class="title-small">CERTIFICATIONS</h2>
+
+          <h3>Microsoft Certified : Azure Developer Associate (AZ-204)</h3>
+          <p>Microsoft — juillet 2026</p>
+          <p>
+            <a
+              class="text-primary link-underline"
+              href="https://learn.microsoft.com/fr-fr/users/diagneoumar-8124/credentials/9051d158c70b4874"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vérifier la certification AZ-204 (s’ouvre dans un nouvel onglet)"
+            >
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              Vérifier la certification
+            </a>
+          </p>
+        </div>
+
+        <div class="block">
           <h2 class="title-small">FORMATION</h2>
+
+          <h3>Formation Microsoft Azure</h3>
+          <p>Programme de formation en ligne — 2025</p>
 
           <h3>Formation DevOps & Cloud Engineering</h3>
           <p>DYMA — Programme de formation en ligne — 2024</p>
 
-          <h3>Formation Microsoft Azure</h3>
-          <p>Microsoft Azure — Programme de formation en ligne — 2025</p>
-
           <h3>Formation d’ingénieur</h3>
-          <p>GTM Ingénierie — 2016</p>
+          <p>GTM Ingénierie — Guyancourt (Yvelines) — 2016</p>
 
           <h3>Master 2 Électronique</h3>
-          <p>2009</p>
+          <p>Faculté d’ingénierie de l’Université de Gênes, Italie — 2009</p>
+          <p>Dont un stage de 9 mois chez Ansaldo STS, Gênes (Sampierdarena)</p>
         </div>
 
         <div class="block">
           <h2 class="title-small">COMPÉTENCES TECHNIQUES</h2>
+
+          <h3>ASP.NET Core (Web API)</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress-80"></div>
+            <div class="bar-skill-dot-80"></div>
+          </div>
+
+          <h3>Entity Framework Core</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress-80"></div>
+            <div class="bar-skill-dot-80"></div>
+          </div>
+
+          <h3>Microsoft Azure</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress-70"></div>
+            <div class="bar-skill-dot-70"></div>
+          </div>
 
           <h3>HTML</h3>
           <div class="bar-skill">
@@ -293,41 +348,37 @@
 
         <h2 class="title-small">EXPÉRIENCES PROFESSIONNELLES</h2>
 
+        <!-- Daemod : activité actuelle entre deux missions -->
         <div class="experience">
           <div class="timeline">
-            Auj. <br />
+            2025 <br />
             – <br />
-            2018
+            Auj.
           </div>
 
           <div class="content">
-            <h3>Ingénieur maintenance et support d’applications web</h3>
-            <p class="text-hint mb-2">Daemod</p>
-
-            <p>
-              Maintenance évolutive d’applications et de serveurs web, avec un
-              objectif de sécurité, de performance et de continuité de service.
+            <h3>Responsable d’exploitation et administrateur informatique</h3>
+            <p class="text-hint mb-2">
+              Daemod — Entreprise de BTP (conduite de travaux et services du
+              bâtiment) · entre deux missions informatiques
             </p>
-
+            <p>
+              Entre deux missions de développement, je gère et administre
+              Daemod, une entreprise spécialisée dans la conduite de travaux et
+              les services du bâtiment.
+            </p>
             <ul>
               <li>
-                Maintenance et évolution d’applications et de serveurs web.
+                Gestion de l’activité courante et administration :
+                planification, suivi clients, devis et facturation.
               </li>
               <li>
-                Implémentation de fonctionnalités et d’améliorations
-                d’interfaces utilisateur.
+                Administration des outils informatiques, des postes de travail
+                et du site web de l’entreprise.
               </li>
               <li>
-                Contribution aux activités de maintenance et de correction de
-                sécurité.
-              </li>
-              <li>
-                Suivi du trafic web, des statistiques d’audience et des
-                performances SEO.
-              </li>
-              <li>
-                Gestion des incidents et demandes de service dans le respect des
-                engagements SLA.
+                Automatisation et digitalisation des processus internes avec des
+                outils développés en interne.
               </li>
             </ul>
           </div>
@@ -339,7 +390,7 @@
           <div class="content">
             <h3>Développeur .NET</h3>
             <p class="text-hint mb-2">
-              Crédit Mutuel — Projets banque et édition de logiciels
+              Euro-Information — Mission chez Crédit Mutuel (mars – août 2025)
             </p>
 
             <p>
@@ -370,11 +421,47 @@
           </div>
         </div>
 
+        <!-- Daemod : activité entre deux missions (2023-2025) -->
         <div class="experience">
           <div class="timeline">
             2023 <br />
             – <br />
-            2019
+            2025
+          </div>
+
+          <div class="content">
+            <h3>Responsable d’exploitation et administrateur informatique</h3>
+            <p class="text-hint mb-2">
+              Daemod — Entreprise de BTP (conduite de travaux et services du
+              bâtiment) · entre deux missions informatiques
+            </p>
+            <p>
+              Entre deux missions de développement, je gère et administre
+              Daemod, une entreprise spécialisée dans la conduite de travaux et
+              les services du bâtiment.
+            </p>
+            <ul>
+              <li>
+                Gestion de l’activité courante et administration :
+                planification, suivi clients, devis et facturation.
+              </li>
+              <li>
+                Administration des outils informatiques, des postes de travail
+                et du site web de l’entreprise.
+              </li>
+              <li>
+                Automatisation et digitalisation des processus internes avec des
+                outils développés en interne.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="timeline">
+            2019 <br />
+            – <br />
+            2023
           </div>
 
           <div class="content">
@@ -418,11 +505,76 @@
           </div>
         </div>
 
+        <!-- Missions courtes 2017-2019 -->
         <div class="experience">
           <div class="timeline">
-            2015 <br />
+            2017 <br />
             – <br />
-            2013
+            2019
+          </div>
+
+          <div class="content">
+            <h3>Développeur .NET — Missions courtes</h3>
+            <p class="text-hint mb-2">Plusieurs missions de 3 mois</p>
+            <ul>
+              <li>
+                Isagri — janv. 2017 – avr. 2017 : développement et maintenance
+                d’applications .NET pour des solutions logicielles agricoles.
+              </li>
+              <li>
+                Groupe BPOC — avr. 2017 – juil. 2017 : participation au
+                développement d’un CRM web en ASP.NET Core et ASP.NET MVC.
+              </li>
+              <li>
+                Septeo — oct. 2018 – déc. 2018 : participation au développement
+                d’un logiciel web de gestion pour cabinets juridiques en ASP.NET
+                Core et Angular.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Daemod : activité entre deux missions (2016-2019) -->
+        <div class="experience">
+          <div class="timeline">
+            2016 <br />
+            – <br />
+            2019
+          </div>
+
+          <div class="content">
+            <h3>Responsable d’exploitation et administrateur informatique</h3>
+            <p class="text-hint mb-2">
+              Daemod — Entreprise de BTP (conduite de travaux et services du
+              bâtiment) · entre deux missions informatiques
+            </p>
+            <p>
+              Entre deux missions de développement, je gère et administre
+              Daemod, une entreprise spécialisée dans la conduite de travaux et
+              les services du bâtiment.
+            </p>
+            <ul>
+              <li>
+                Gestion de l’activité courante et administration :
+                planification, suivi clients, devis et facturation.
+              </li>
+              <li>
+                Administration des outils informatiques, des postes de travail
+                et du site web de l’entreprise.
+              </li>
+              <li>
+                Automatisation et digitalisation des processus internes avec des
+                outils développés en interne.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="timeline">
+            2013 <br />
+            – <br />
+            2015
           </div>
 
           <div class="content">
@@ -475,9 +627,9 @@
 
         <div class="experience">
           <div class="timeline">
-            2013 <br />
+            2012 <br />
             – <br />
-            2012
+            2013
           </div>
 
           <div class="content">
@@ -528,9 +680,9 @@
 
         <div class="experience">
           <div class="timeline">
-            2012 <br />
+            2010 <br />
             – <br />
-            2010
+            2012
           </div>
 
           <div class="content">
@@ -607,7 +759,7 @@
         </div>
       </main>
 
-      <footer>
+      <footer id="contact">
         <h2 class="title-small">ME CONTACTER</h2>
 
         <form
@@ -660,5 +812,20 @@
         </form>
       </footer>
     </div>
+
+    <script>
+      // Défilement fluide vers le formulaire et curseur dans le premier champ
+      document.querySelectorAll(".js-contact-link").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(function () {
+            document.getElementById("name-fr").focus({ preventScroll: true });
+          }, 500);
+        });
+      });
+    </script>
   </body>
 </html>
