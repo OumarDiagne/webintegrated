@@ -346,6 +346,65 @@
           alle pratiche DevOps.
         </p>
 
+        <h2 class="title-small">REALIZZAZIONI</h2>
+
+        <div class="experience mb-5">
+          <div class="timeline">2026</div>
+
+          <div class="content">
+            <h3>MigAgiBdd — API per la gestione di ordini e magazzino</h3>
+            <p class="text-hint mb-2">
+              ASP.NET Core (.NET 10), SQL Server, Docker, Azure Container Apps
+            </p>
+            <p>API REST pensata per essere padroneggiata da capo a fondo: codice, database, test, integrazione continua, poi distribuzione su un server di test e su Azure.</p>
+            <ul>
+              <li>
+                API REST a livelli (ASP.NET Core, EF Core, SQL Server) per clienti, prodotti, ordini e magazzino, con registro di audit.
+              </li>
+              <li>
+                Sicurezza: JWT di breve durata, refresh token con rotazione in un cookie HttpOnly, controllo degli accessi per ruolo e per proprietario.
+              </li>
+              <li>
+                Affidabilità: concorrenza ottimistica (RowVersion, risposte 409/428) e creazione idempotente (intestazione Idempotency-Key).
+              </li>
+              <li>
+                Oltre 200 test automatici (xUnit), inclusi test di integrazione su un vero database SQL Server temporaneo.
+              </li>
+              <li>
+                Pipeline di rilascio: GitHub Actions esegue i test, costruisce un'immagine Docker pubblicata su GitHub Container Registry, poi la distribuisce su Azure Container Apps con un'identità federata senza password (OIDC).
+              </li>
+              <li>
+                Azure: Azure SQL raggiunto tramite identità gestita, segreti in Key Vault, avvisi di budget mensile, scalabilità a zero per contenere i costi.
+              </li>
+              <li>
+                Validato prima su un server di test (Windows Server 2022, IIS), poi con Docker Compose dietro un reverse proxy nginx.
+              </li>
+            </ul>
+            <p>
+              <a
+                class="text-primary link-underline"
+                href="https://github.com/OumarDiagne/SolutionMigrationApiBdd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                Codice sorgente e CI su GitHub
+              </a>
+              ·
+              <a
+                class="text-primary link-underline"
+                href="https://ca-migapi.salmonriver-8486a327.francecentral.azurecontainerapps.io/scalar/v1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                Documentazione dell'API online (Scalar)
+              </a>
+            </p>
+            <p class="text-hint">La demo scala a zero: il primo caricamento può richiedere circa un minuto.</p>
+          </div>
+        </div>
+
         <h2 class="title-small">ESPERIENZE PROFESSIONALI</h2>
 
         <!-- Daemod: attività attuale tra una missione e l'altra -->
