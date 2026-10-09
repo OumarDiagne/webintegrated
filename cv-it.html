@@ -356,28 +356,43 @@
             <p class="text-hint mb-2">
               ASP.NET Core (.NET 10), SQL Server, Docker, Azure Container Apps
             </p>
-            <p>API REST pensata per essere padroneggiata da capo a fondo: codice, database, test, integrazione continua, poi distribuzione su un server di test e su Azure.</p>
+            <p>
+              API REST pensata per essere padroneggiata da capo a fondo: codice,
+              database, test, integrazione continua, poi distribuzione su un
+              server di test e su Azure.
+            </p>
             <ul>
               <li>
-                API REST a livelli (ASP.NET Core, EF Core, SQL Server) per clienti, prodotti, ordini e magazzino, con registro di audit.
+                API REST a livelli (ASP.NET Core, EF Core, SQL Server) per
+                clienti, prodotti, ordini e magazzino, con registro di audit.
               </li>
               <li>
-                Sicurezza: JWT di breve durata, refresh token con rotazione in un cookie HttpOnly, controllo degli accessi per ruolo e per proprietario.
+                Sicurezza: JWT di breve durata, refresh token con rotazione in
+                un cookie HttpOnly, controllo degli accessi per ruolo e per
+                proprietario.
               </li>
               <li>
-                Affidabilità: concorrenza ottimistica (RowVersion, risposte 409/428) e creazione idempotente (intestazione Idempotency-Key).
+                Affidabilità: accessi concorrenti (RowVersion, risposte 409/428)
+                e creazione idempotente (intestazione Idempotency-Key).
               </li>
               <li>
-                Oltre 200 test automatici (xUnit), inclusi test di integrazione su un vero database SQL Server temporaneo.
+                Oltre 200 test automatici (xUnit), inclusi test di integrazione
+                su un vero database SQL Server temporaneo.
               </li>
               <li>
-                Pipeline di rilascio: GitHub Actions esegue i test, costruisce un'immagine Docker pubblicata su GitHub Container Registry, poi la distribuisce su Azure Container Apps con un'identità federata senza password (OIDC).
+                Pipeline di rilascio: GitHub Actions esegue i test, costruisce
+                un'immagine Docker pubblicata su GitHub Container Registry, poi
+                la distribuisce su Azure Container Apps con un'identità federata
+                senza password (OIDC).
               </li>
               <li>
-                Azure: Azure SQL raggiunto tramite identità gestita, segreti in Key Vault, avvisi di budget mensile, scalabilità a zero per contenere i costi.
+                Azure: Azure SQL raggiunto tramite identità gestita, segreti in
+                Key Vault, avvisi di budget mensile, scalabilità a zero per
+                contenere i costi.
               </li>
               <li>
-                Validato prima su un server di test (Windows Server 2022, IIS), poi con Docker Compose dietro un reverse proxy nginx.
+                Validato prima su un server di test (Windows Server 2022, IIS),
+                poi con Docker Compose dietro un reverse proxy nginx.
               </li>
             </ul>
             <p>
@@ -401,7 +416,10 @@
                 Documentazione dell'API online (Scalar)
               </a>
             </p>
-            <p class="text-hint">La demo scala a zero: il primo caricamento può richiedere circa un minuto.</p>
+            <p class="text-hint">
+              La demo scala a zero: il primo caricamento può richiedere circa un
+              minuto.
+            </p>
           </div>
         </div>
 
